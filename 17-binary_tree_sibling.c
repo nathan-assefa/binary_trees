@@ -2,7 +2,7 @@
 
 /**
 * binary_tree_sibling- To find the sibiling of BS
-* @tree: The tree whose siblings to be found
+* @node: The tree whose siblings to be found
 * Return: the sibling node
 */
 binary_tree_t *binary_tree_sibling(binary_tree_t *node)
