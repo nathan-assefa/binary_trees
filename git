@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+chmod +x *.c
+git add .
+git commit -m 'binary_tree'
+git push
