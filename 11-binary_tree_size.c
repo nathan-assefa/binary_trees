@@ -7,7 +7,6 @@
  */
 size_t binary_tree_size(const binary_tree_t *tree)
 {
-	if (tree) printf("tree->n: %d\n", tree->n);
 	size_t a, b;
 
 	if (!tree)
