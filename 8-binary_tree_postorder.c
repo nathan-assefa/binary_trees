@@ -1,16 +1,16 @@
 #include "binary_trees.h"
 
 /**
-* binary_tree_inorder- Traversing via preorder
+* binary_tree_postorder- Traversing via preorder
 * @tree: Tree to be traversed
 * @func: functional pointer
 */
-void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int))
+void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int))
 {
 	if (!tree || !func)
 		return;
 
 	binary_tree_preorder(tree->left, func);
-	func(tree->n);
 	binary_tree_preorder(tree->right, func);
+	func(tree->n);
 }
