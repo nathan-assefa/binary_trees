@@ -12,7 +12,7 @@ bst_t *bst_insert(bst_t **tree, int value)
 
 	if (tree == NULL)
 		return (NULL);
-	tmp = *tree;
+	temp = *tree;
 
 	if (*tree == NULL)
 	{
