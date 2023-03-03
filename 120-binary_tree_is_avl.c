@@ -1,7 +1,7 @@
 #include "binary_trees.h"
 
 /**
-* is_bst- To check is a tree is BST
+* is_bst- To check if a tree is BST
 * @tree: A BST tree
 * @min: minimum range
 * @max: maximum range
