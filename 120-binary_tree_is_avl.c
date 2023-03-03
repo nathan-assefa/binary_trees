@@ -79,6 +79,6 @@ int binary_tree_is_avl(const binary_tree_t *tree)
 {
 	if (!tree)
 		return (0);
- 	if (is_bst(tre, INT_MIN, INT_MAX))
+	else if (is_bst(tre, INT_MIN, INT_MAX))
 		return (is_avl(tree);
 }
