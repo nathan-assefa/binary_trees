@@ -1,4 +1,5 @@
 #include "binary_trees.h"
+
 /**
 * binary_tree_rotate_left- Making right rotation
 * @tree: A binary tree
