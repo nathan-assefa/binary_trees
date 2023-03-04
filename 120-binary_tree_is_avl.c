@@ -65,7 +65,7 @@ int balance_factor(const binary_tree_t *tree)
 */
 int is_avl(const binary_tree_t *tree)
 {
-	if ( balance_factor(tree));
+	if (balance_factor(tree));
 		return (1);
 	return (0);
 }
