@@ -46,11 +46,16 @@ int balance_factor(const binary_tree_t *tree)
 	int a, b;
 
 	if (!tree)
-		return (0);
+		return (1);
 
 	a = height(tree->left);
 	b = height(tree->right);
-	return (a - b);
+	if (abs(a - b) <= 1
+		&& balance_factor(tree->left)
+		&& balance_factor(tree->right)
+	)
+		return (1);
+	return (0);
 }
 
 /**
@@ -63,9 +68,9 @@ int is_avl(const binary_tree_t *tree)
 	int ans;
 
 	ans = balance_factor(tree);
-	if (abs(ans) >= 1)
-		return (0);
-	return (1);
+	if (abs(ans) == 1)
+		return (1);
+	return (0);
 }
 
 /**
