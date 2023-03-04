@@ -14,7 +14,7 @@ binary_tree_t *binary_tree_rotate_left(binary_tree_t *tree)
 	if (!tree || !tree->right)
 		return (NULL);
 
-	if (rotate->right)
+	if (rotate->left)
 		rotate->left->parent = tree;
 
 	tree->right = rotate->left;
