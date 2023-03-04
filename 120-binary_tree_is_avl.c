@@ -63,11 +63,9 @@ int is_avl(const binary_tree_t *tree)
 	int ans;
 
 	ans = balance_factor(tree);
-	if (abs(ans) > 1)
+	if (abs(ans) >= 1)
 		return (0);
-	else if (abs(ans) < 1)
-		return (1);
-	return (balance_factor(tree->left) && balance_factor(tree->right));
+	return (1);
 }
 
 /**
