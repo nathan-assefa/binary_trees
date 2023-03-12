@@ -22,10 +22,8 @@ avl_t *r_insert_node(avl_t **tree, avl_t *parent, avl_t **new, int nval)
 	{
 		(*tree)->right = r_insert_node(&(*tree)->right, *tree, new, nval);
 	}
-	else
-	{
-		return (*tree);
-	}
+	
+
 	bval = binary_tree_balance(*tree);
 	if (bval > 1 && (*tree)->left->n > nval)
 	{
@@ -45,7 +43,6 @@ avl_t *r_insert_node(avl_t **tree, avl_t *parent, avl_t **new, int nval)
 		(*tree)->right = binary_tree_rotate_right((*tree)->right);
 		*tree = binary_tree_rotate_left(*tree);
 	}
-	return (*tree);
 }
 /**
  * avl_insert - inserts a value into an AVL tree.
