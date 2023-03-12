@@ -2,7 +2,7 @@
 
 /**
 * create_new- To create a new BST node
-* @tree: pointer to parent node
+* @parent: pointer to parent node
 * @new: the new node created
 * @value: Data to be inserted
 * Return: created node
